@@ -84,7 +84,7 @@ RUN if lsb_release -cs | grep -qE "precise|trusty"; then \
       xubuntu-desktop --force-yes; \
     else \
       env DEBIAN_FRONTEND=noninteractive apt-get install -y \
-      xubuntu-desktop cinnamon-desktop-data libcinnamon-deskop4 mate-desktop mate-desktop-common cinnamon-common cinnamon-session-common mate-panel-common mint-common; \
+      xubuntu-desktop cinnamon-desktop-data libcinnamon-desktop4 mate-desktop mate-desktop-common cinnamon-common cinnamon-session-common mate-panel-common mint-common; \
     fi
 
 # 20.10 specifics
