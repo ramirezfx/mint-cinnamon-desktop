@@ -34,6 +34,7 @@ RUN apt-get update && \
       libxv1 \
       sudo \
       lsb-release \
+      apt-transport-https \
       curl sudo wget pulseaudio vim x2goserver x2goserver-xsession
       
 
