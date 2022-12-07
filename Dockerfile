@@ -71,7 +71,7 @@ RUN if lsb_release -cs | grep -q "trusty"; then \
     env DEBIAN_FRONTEND=noninteractive apt-get install -y software-properties-common && \
     env DEBIAN_FRONTEND=noninteractive apt-get update && \
     env DEBIAN_FRONTEND=noninteractive apt-get upgrade -y --force-yes && \
-    env DEBIAN_FRONTEND=noninteractive apt-get install -y xubuntu-core --force-yes; \
+    env DEBIAN_FRONTEND=noninteractive apt-get install -y mint-meta-core --force-yes; \
     else true; fi
 
 
@@ -82,10 +82,10 @@ RUN if lsb_release -cs | grep -q "trusty"; then \
 # * task for 16.04 LTS and newer versions
 RUN if lsb_release -cs | grep -qE "precise|trusty"; then \
     env DEBIAN_FRONTEND=noninteractive apt-get install -y \
-      xubuntu-desktop --force-yes; \
+      cinnamon-desktop --force-yes; \
     else \
       env DEBIAN_FRONTEND=noninteractive apt-get install -y \
-      xubuntu-desktop cinnamon-desktop-data libcinnamon-desktop4 mate-desktop mate-desktop-common cinnamon-common cinnamon-session-common mate-panel-common mint-common; \
+      cinnamon-desktop-data libcinnamon-desktop4 mate-desktop mate-desktop-common cinnamon-common cinnamon-session-common mate-panel-common mint-common; \
     fi
 
 # 20.10 specifics
